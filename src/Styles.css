@@ -5,6 +5,10 @@
     background-color: #121212;
   }
 
+  .home {
+    padding: 20px;
+  }
+
   .logo{
     margin-top: 100px;
     padding: 1rem;

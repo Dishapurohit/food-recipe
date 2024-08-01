@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RecipeForm = ({ onSubmit, initialData = {} }) => {
+export default function RecipeForm({ onSubmit, initialData = {} }){
   const [name, setName] = useState(initialData.name || '');
   const [ingredients, setIngredients] = useState(initialData.ingredients || '');
   const [description, setDescription] = useState(initialData.description || '');
@@ -50,5 +50,3 @@ const RecipeForm = ({ onSubmit, initialData = {} }) => {
     </div>
   );
 };
-
-export default RecipeForm;
