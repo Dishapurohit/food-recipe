@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-export default function Login(){
+export default function Registration(){
   const [formData, setFormData] = useState({
+    username: '',
     email: '',
     password: '',
   });
@@ -15,13 +16,17 @@ export default function Login(){
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login data submitted:', formData);
+    console.log('Form data submitted:', formData);
   };
 
   return (
-    <div className="login">
-      <h1>Login</h1>
+    <div className="registration">
+      <h1>Register</h1>
       <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="username">Username:</label>
+          <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required />
+        </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
@@ -30,7 +35,7 @@ export default function Login(){
           <label htmlFor="password">Password:</label>
           <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
       </form>
     </div>
   );

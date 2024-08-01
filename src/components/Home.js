@@ -1,27 +1,26 @@
 import React from 'react';
-import Navbar from './Navbar';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Registration from './Registeration';
-// import Login from './Login';
+import '../Styles.css';
+import RecipeList from './RecipeList';
 
-export default function Home(){
+export default function Home({ recipes }){
+    
 
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className='header'>
-            <img className='logo' src='food-recipe.png' alt="moviedux" />
-            <h2 className='app-subtitle'>Hey share your amazing recipe here!....</h2>
-            <Navbar></Navbar>
+        <div className="home">
+            <img className='logo' src='food-recipe.png' alt="Food Recipe Sharing App" />
+            <h1>Welcome to RecipeApp</h1>
             <p>Discover and share amazing recipes!</p>
             <span>This is a food recipe Sharing app for you guys...... 
                 Enjoy Your amazing recipes and food with us.
             </span>
+            <RecipeList recipes={recipes} />
             <footer className='footer'>
-                <p className='footer-text'> 
-                © {currentYear} Food Sharing Recipe App, All rights reserved.
+                <p className='footer-text'>
+                    © {currentYear} Food Sharing Recipe App, All rights reserved.
                 </p>
             </footer>
         </div>
     );
-}
+};
