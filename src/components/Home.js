@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Styles.css';
 import RecipeList from './RecipeList';
+import '../Styles.css';
 
 export default function Home({ recipes }){
     
@@ -10,7 +10,7 @@ export default function Home({ recipes }){
     return (
         <div className="home">
             <img className='logo' src='food-recipe.png' alt="Food Recipe Sharing App" />
-            <h1>Welcome to RecipeApp</h1>
+            <h1>Welcome to Food Recipe Sharing App</h1>
             <p>Discover and share amazing recipes!</p>
             <span>This is a food recipe Sharing app for you guys...... 
                 Enjoy Your amazing recipes and food with us.
@@ -24,3 +24,4 @@ export default function Home({ recipes }){
         </div>
     );
 };
+

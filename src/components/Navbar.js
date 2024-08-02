@@ -19,6 +19,7 @@ export default function Navbar({ onSearch }) {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/register">Register</Link></li>
             <li><Link to="/login">Login</Link></li>
+            <li><Link to="/recipelist">RecipeList</Link></li>
             </ul>
             <input type="text" placeholder="Search..." className="search-input" onChange={handleSearch}/>
             <Search onSearch={onSearch} />
@@ -26,5 +27,3 @@ export default function Navbar({ onSearch }) {
         </nav>
     );
 };
-
-

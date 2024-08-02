@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-const RecipeDetail = ({ recipes }) => {
+export default function RecipeDetail({ recipes }){
   const { id } = useParams();
   const recipe = recipes.find(r => r.id === parseInt(id));
 
@@ -20,4 +20,3 @@ const RecipeDetail = ({ recipes }) => {
   );
 };
 
-export default RecipeDetail;

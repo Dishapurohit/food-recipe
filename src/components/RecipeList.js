@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function RecipeList({ recipes }){
   return (
     <div className="recipe-list">
-      <h1>Recipes</h1>
+      <h1>Food Recipes</h1>
       <ul>
         {recipes.map(recipe => (
           <li key={recipe.id} className="recipe-item">
@@ -17,4 +17,3 @@ export default function RecipeList({ recipes }){
     </div>
   );
 };
-

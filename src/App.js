@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Registration from './components/Registraion';
+import Registration from './components/Registration';
 import Login from './components/Login';
 import RecipeDetail from './components/RecipeDetail';
 import RecipeForm from './components/RecipeForm';

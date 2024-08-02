@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-
-const Search = ({ onSearch }) => {
+export default function Search({ onSearch }){
   const [query, setQuery] = useState('');
 
   const handleChange = (e) => {
@@ -23,4 +22,3 @@ const Search = ({ onSearch }) => {
   );
 };
 
-export default Search;
